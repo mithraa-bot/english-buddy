@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Buddy 📚</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- Header -->
+    <header id="header">
+      <div id="buddy-avatar">🦉</div>
+      <div id="header-text">
+        <h1>English Buddy</h1>
+        <p>Your grammar helper!</p>
+      </div>
+    </header>
+
+    <!-- Topic Menu -->
+    <nav id="topic-bar">
+      <span class="topic-label">Pick a topic:</span>
+      <button class="topic-btn" data-topic="nouns">🏷️ Nouns</button>
+      <button class="topic-btn" data-topic="verbs">⚡ Verbs</button>
+      <button class="topic-btn" data-topic="adjectives">🎨 Adjectives</button>
+      <button class="topic-btn" data-topic="punctuation">✏️ Punctuation</button>
+      <button class="topic-btn" data-topic="quiz">🎯 Quiz me!</button>
+    </nav>
+
+    <!-- Chat Window -->
+    <main id="chat-window" aria-live="polite" aria-label="Chat messages">
+      <!-- Messages injected here by JS -->
+    </main>
+
+    <!-- Input Area -->
+    <footer id="input-area">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type here or pick a topic above…"
+        autocomplete="off"
+        maxlength="200"
+      />
+      <button id="send-btn" aria-label="Send message">Send ➤</button>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
